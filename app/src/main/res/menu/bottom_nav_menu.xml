@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homebutton"
+        android:icon="@drawable/homeicon"
+        android:title="Home"
+        />
+
+    <item
+        android:id="@+id/mapbutton"
+        android:icon="@drawable/mapicon"
+        android:title="Map"
+        />
+
+    <item
+        android:id="@+id/managebutton"
+        android:icon="@drawable/suitcaseicon"
+        android:title="Manage"
+        />
+
+    <item
+        android:id="@+id/reportbutton"
+        android:icon="@drawable/reportsicon"
+        android:title="Report"
+        />
+    <item
+        android:id="@+id/profilebutton"
+        android:icon="@drawable/profileicon"
+        android:title="Profile"
+        />
+
+</menu>
