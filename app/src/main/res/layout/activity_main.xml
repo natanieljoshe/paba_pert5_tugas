@@ -255,6 +255,7 @@
 
             <!--            Kontak 4-->
             <LinearLayout
+                android:id="@+id/sectionrole"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_kotak_container_abu_dalam"
@@ -287,6 +288,7 @@
                         />
 
                     <TextView
+                        android:id="@+id/tvRole"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Admin"

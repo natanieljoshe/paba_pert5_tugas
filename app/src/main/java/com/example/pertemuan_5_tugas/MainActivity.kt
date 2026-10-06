@@ -5,14 +5,29 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.LinearLayout
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
+
+    private var role = "Admin"
+    private lateinit var tvRole: TextView
+
+    private val roleLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        if (result.resultCode == RESULT_OK) {
+            role = result.data?.getStringExtra("role") ?: role
+            tvRole.text = role
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -23,11 +38,13 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        tvRole = findViewById(R.id.tvRole)
+        tvRole.text = role
+
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNavigation)
         bottomNav.isItemActiveIndicatorEnabled = false
 
         val sectionemail = findViewById<LinearLayout>(R.id.sectionemail)
-
         sectionemail.setOnClickListener {
             val sendIntent = Intent(Intent.ACTION_SENDTO).apply {
                 data = Uri.parse("mailto:")
@@ -53,6 +70,10 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
+        val sectionrole = findViewById<LinearLayout>(R.id.sectionrole)
+        sectionrole.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
+            roleLauncher.launch(intent)
+        }
     }
 }
