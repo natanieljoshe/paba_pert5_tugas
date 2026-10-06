@@ -10,115 +10,122 @@
     android:background="#000"
     >
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:orientation="vertical"
-        >
-        <!-- top bar -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:id="@+id/btnBack"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="start"
-                android:text="&lt;"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Profile"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
-
-        </LinearLayout>
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_kotak_container_abu"
-            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:orientation="vertical"
-            android:padding="20dp"
-            android:layout_marginBottom="10dp"
             >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Role Anda"
-                android:textSize="16sp"
-                android:textColor="#fff"
-                android:textFontWeight="600"
-                android:padding="10dp"
-                />
-
-            <!-- Button 1 -->
+            <!-- top bar -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_kotak_container_abu_dalam"
-                android:gravity="center"
                 android:orientation="horizontal"
-                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/btnBack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="&lt;"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_kotak_container_abu"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp"
                 android:layout_marginBottom="10dp"
                 >
 
-                <Button
-                    android:id="@+id/adminbutton"
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#fff"
-                    android:text="Admin"
+                    android:text="Role Anda"
                     android:textSize="16sp"
-                    android:background="#bc53ed"
+                    android:textColor="#fff"
+                    android:textFontWeight="600"
+                    android:padding="10dp"
                     />
 
-                <Button
-                    android:id="@+id/userbutton"
-                    android:layout_width="wrap_content"
+                <!-- Button 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#fff"
-                    android:text="User"
-                    android:textSize="16sp"
-                    android:background="#bc53ed"
-                    android:layout_marginRight="3dp"
-                    android:layout_marginLeft="3dp"
-                    />
+                    android:background="@drawable/bg_kotak_container_abu_dalam"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    >
 
-                <Button
-                    android:id="@+id/guestbutton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#fff"
-                    android:text="Guest"
-                    android:textSize="16sp"
-                    android:background="#bc53ed"
-                    />
+                    <Button
+                        android:id="@+id/adminbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text="Admin"
+                        android:textSize="16sp"
+                        android:background="#bc53ed"
+                        />
+
+                    <Button
+                        android:id="@+id/userbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text="User"
+                        android:textSize="16sp"
+                        android:background="#bc53ed"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginLeft="3dp"
+                        />
+
+                    <Button
+                        android:id="@+id/guestbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text="Guest"
+                        android:textSize="16sp"
+                        android:background="#bc53ed"
+                        />
+
+                </LinearLayout>
 
             </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
+    </ScrollView>
 
     <!-- Navbar -->
     <com.google.android.material.bottomnavigation.BottomNavigationView

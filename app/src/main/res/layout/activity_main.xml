@@ -10,453 +10,448 @@
     android:background="#000"
     >
 
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:orientation="vertical"
-        >
-        <!--    top bar-->
+        android:fillViewport="true">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:id="@+id/btnBack"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="start"
-                android:text="&lt;"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Profile"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
-
-        </LinearLayout>
-
-<!--      Banner Profile-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/bg_kotak_banner"
-            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:orientation="vertical"
             >
-
-            <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/carprofilepicture"
-                android:scaleType="centerCrop"
-                app:shapeAppearanceOverlay="@style/RoundedImage"
-                android:layout_marginBottom="10dp"
-                />
-
-            <TextView
-                android:layout_width="206dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Sarah Johnson"
-                android:textAlignment="center"
-                android:textColor="#fff"
-                android:textFontWeight="500"
-                android:textSize="18sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="System Administrator"
-                android:textColor="#fff"
-                android:textSize="11sp"
-                android:textAlignment="center"
-                />
-
-        </LinearLayout>
-
-<!--        Account Information-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_kotak_container_abu"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="20dp"
-            android:layout_marginBottom="10dp"
-            >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Account Information"
-                android:textSize="16sp"
-                android:textColor="#fff"
-                android:textFontWeight="600"
-                android:padding="10dp"
-                />
-
-<!--            Kontak 1-->
+            <!-- top bar -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_kotak_container_abu_dalam"
-                android:gravity="center"
                 android:orientation="horizontal"
-                android:padding="10dp"
-                android:layout_marginBottom="10dp"
-                android:id="@+id/sectionemail"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/btnBack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="&lt;"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <!-- Banner Profile -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_kotak_banner"
+                android:gravity="center"
+                android:orientation="vertical"
                 >
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/mailicon"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/carprofilepicture"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/RoundedImage"
+                    android:layout_marginBottom="10dp"
                     />
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="206dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Sarah Johnson"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textFontWeight="500"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="System Administrator"
+                    android:textColor="#fff"
+                    android:textSize="11sp"
+                    android:textAlignment="center"
+                    />
+
+            </LinearLayout>
+
+            <!-- Account Information -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_kotak_container_abu"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:orientation="vertical"
+                    android:text="Account Information"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:textFontWeight="600"
                     android:padding="10dp"
+                    />
+
+                <!-- Kontak 1 -->
+                <LinearLayout
+                    android:id="@+id/sectionemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_kotak_container_abu_dalam"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
                     >
-                    
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Email"
-                        android:textColor="#fff"
-                        android:textFontWeight="300"
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/mailicon"
                         />
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="sarah@school.edu"
-                        android:textColor="#fff"
-                        android:textFontWeight="500"
-                        />
+                        android:gravity="left"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:textColor="#fff"
+                            android:textFontWeight="300"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sarah@school.edu"
+                            android:textColor="#fff"
+                            android:textFontWeight="500"
+                            />
 
                     </LinearLayout>
 
+                </LinearLayout>
+
+                <!-- Kontak 2 -->
+                <LinearLayout
+                    android:id="@+id/sectiontelepon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_kotak_container_abu_dalam"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/phoneicon"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone"
+                            android:textColor="#fff"
+                            android:textFontWeight="300"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+1 (555) 987-6547"
+                            android:textColor="#fff"
+                            android:textFontWeight="500"
+                            />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
-            <!--            Kontak 2-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_kotak_container_abu_dalam"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                android:layout_marginBottom="10dp"
-                android:id="@+id/sectiontelepon"
-                >
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/phoneicon"
-                    />
-
+                <!-- Kontak 3 -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:orientation="vertical"
+                    android:background="@drawable/bg_kotak_container_abu_dalam"
+                    android:gravity="center"
+                    android:orientation="horizontal"
                     android:padding="10dp"
+                    android:layout_marginBottom="10dp"
                     >
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Phone"
-                        android:textColor="#fff"
-                        android:textFontWeight="300"
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/buildingicon"
                         />
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="+1 (555) 987-6547"
-                        android:textColor="#fff"
-                        android:textFontWeight="500"
-                        />
+                        android:gravity="left"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Institution"
+                            android:textColor="#fff"
+                            android:textFontWeight="300"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="University of Oxford"
+                            android:textColor="#fff"
+                            android:textFontWeight="500"
+                            />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
+                <!-- Kontak 4 -->
+                <LinearLayout
+                    android:id="@+id/sectionrole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_kotak_container_abu_dalam"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/shieldicon"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Role"
+                            android:textColor="#fff"
+                            android:textFontWeight="300"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvRole"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Admin"
+                            android:textColor="#fff"
+                            android:textFontWeight="500"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
 
             </LinearLayout>
 
-            <!--            Kontak 3-->
+            <!-- Notifications -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notifications"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_kotak_container_abu_dalam"
+                android:background="@drawable/bg_kotak_container_abu"
                 android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_marginBottom="15dp"
                 >
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/buildingicon"
-                    />
-
+                <!-- Notif 1 -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
                     android:padding="10dp"
+                    android:layout_marginBottom="2dp"
                     >
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Institution"
-                        android:textColor="#fff"
-                        android:textFontWeight="300"
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/notificon"
                         />
 
-                    <TextView
+                    <!-- Text -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:textColor="#fff"
+                            android:textFontWeight="300"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Receive alerts on your devices"
+                            android:textColor="#fff"
+                            android:textFontWeight="500"
+                            android:textSize="10sp"
+                            />
+
+                    </LinearLayout>
+
+                    <Switch
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="University of Oxford"
-                        android:textColor="#fff"
-                        android:textFontWeight="500"
+                        android:gravity="left"
+                        android:checked="true"
+                        android:visibility="visible"
+                        android:thumbTint="#fff"
+                        android:trackTint="#8645ff"
                         />
 
                 </LinearLayout>
 
-
-            </LinearLayout>
-
-            <!--            Kontak 4-->
-            <LinearLayout
-                android:id="@+id/sectionrole"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_kotak_container_abu_dalam"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                android:layout_marginBottom="10dp"
-                >
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/shieldicon"
-                    />
-
+                <!-- Notif 2 -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
                     android:padding="10dp"
+                    android:layout_marginBottom="2dp"
                     >
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Role"
-                        android:textColor="#fff"
-                        android:textFontWeight="300"
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/mailicon"
                         />
 
-                    <TextView
-                        android:id="@+id/tvRole"
+                    <!-- Text -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:textColor="#fff"
+                            android:textFontWeight="300"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Receive alerts on your devices"
+                            android:textColor="#fff"
+                            android:textFontWeight="500"
+                            android:textSize="10sp"
+                            />
+
+                    </LinearLayout>
+
+                    <Switch
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Admin"
-                        android:textColor="#fff"
-                        android:textFontWeight="500"
+                        android:gravity="left"
+                        android:checked="true"
+                        android:visibility="visible"
+                        android:thumbTint="#fff"
+                        android:trackTint="#8645ff"
                         />
 
                 </LinearLayout>
 
-
             </LinearLayout>
-
-
 
         </LinearLayout>
 
+    </ScrollView>
 
-<!--        Notifications -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Notifications"
-            android:textColor="#fff"
-            android:textSize="16sp"
-            />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_kotak_container_abu"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="15dp"
-            >
-
-<!--            Notif 1-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                android:layout_marginBottom="2dp"
-                >
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/notificon"
-
-                    />
-<!--            Text-->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:orientation="vertical"
-                    android:padding="10dp"
-                    android:layout_weight="1"
-                    >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Email"
-                        android:textColor="#fff"
-                        android:textFontWeight="300"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Receive alerts on your devices"
-                        android:textColor="#fff"
-                        android:textFontWeight="500"
-                        android:textSize="10sp"
-                        />
-
-                </LinearLayout>
-
-                <Switch
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:checked="true"
-                    android:visibility="visible"
-                    android:thumbTint="#fff"
-                    android:trackTint="#8645ff"
-                    />
-
-
-            </LinearLayout>
-
-            <!--            Notif 2-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                android:layout_marginBottom="2dp"
-                >
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/mailicon"
-
-                    />
-                <!--            Text-->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:orientation="vertical"
-                    android:padding="10dp"
-                    android:layout_weight="1"
-                    >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Email"
-                        android:textColor="#fff"
-                        android:textFontWeight="300"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Receive alerts on your devices"
-                        android:textColor="#fff"
-                        android:textFontWeight="500"
-                        android:textSize="10sp"
-                        />
-
-                </LinearLayout>
-
-                <Switch
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:checked="true"
-                    android:visibility="visible"
-                    android:thumbTint="#fff"
-                    android:trackTint="#8645ff"
-                    />
-
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-        </LinearLayout>
-
-<!--    Navbar-->
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/bottomNavigation"
-            app:menu="@menu/bottom_nav_menu"
-            android:background="#000"
-            app:itemIconTint="@color/nav_item_color"
-            app:itemTextColor="@color/nav_item_color"
-            app:labelVisibilityMode="labeled"
-            />
-
-
-
+    <!-- Navbar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav_menu"
+        android:background="#000"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        app:labelVisibilityMode="labeled"
+        />
 
 </LinearLayout>
